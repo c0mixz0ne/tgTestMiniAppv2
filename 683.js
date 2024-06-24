@@ -61,7 +61,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(51);
 /* harmony import */ var _base__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67);
-/* harmony import */ var _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(305);
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -79,7 +78,6 @@ var __extends = (undefined && undefined.__extends) || (function () {
 })();
 
 
-
 var SupportModel = /** @class */ (function (_super) {
     __extends(SupportModel, _super);
     function SupportModel() {
@@ -93,43 +91,13 @@ var SupportModel = /** @class */ (function (_super) {
     // get header(): string { return "Support" }
     SupportModel.prototype._onRenderElement = function (element) {
         _super.prototype._onRenderElement.call(this, element);
-        // TGAPP - start
-        var SUPPORTLINK = 'https://t.me/wsenderru_support_bot';
-        if (_twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].colorScheme === "light") {
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.bg_color = '#F4F4F4';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.secondary_bg_color = '#FFFFFF';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.text_color = '#1C1C1C';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.header_bg_color = '#F4F4F4';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.hint_color = '#8D8D8D';
-            console.log("theme ".concat(_twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].colorScheme));
-        }
-        if (_twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].colorScheme === "dark") {
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.bg_color = '#1C1C1C';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.secondary_bg_color = '#494949';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.text_color = '#F4F4F4';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.header_bg_color = '#1C1C1C';
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].themeParams.hint_color = '#BBB';
-            console.log("theme ".concat(_twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].colorScheme));
-        }
-        _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].MainButton.setParams({
-            color: '#0D907C',
-            text: 'Написать в поддержку1',
-            text_color: '#FFFFFF',
-            is_active: true,
-            is_visible: true
-        });
-        _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].MainButton.onClick(function () {
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].openTelegramLink(SUPPORTLINK);
-            // Close Mini App
-            _twa_dev_sdk__WEBPACK_IMPORTED_MODULE_2__["default"].close();
-        });
-        // TGAPP - end
         element.appendChild(brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("h1", null, "Wsender на связи, наши телефоны поддержки"));
         element.appendChild(brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("ul", { class: "phone-list" }, [
             brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("li", { class: "list-item" }, [
-                brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("a", { class: "applink", onclick: "window.open('tel:+79232229022')" }, [
+                brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("a", { onclick: "window.open('tel:+79232229022')" }, [
                     brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("div", { class: "phone-item" }, [
                         brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("div", { class: "phone-icon" }, [
+                            // DOM.tag("img", {src : "../images/phone-icon.png"}),
                             brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("img", { src: "../images/phone-icon.svg" }),
                             // DOM.tag("svg", {xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox:"0 0 16 16", fill: "none",}, [
                             //     DOM.tag("g", {id: "Icon/IOS/Phone"}, [
@@ -148,6 +116,7 @@ var SupportModel = /** @class */ (function (_super) {
                 brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("a", { class: "applink", onclick: "window.open('tel:+77001550077')" }, [
                     brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("div", { class: "phone-item" }, [
                         brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("div", { class: "phone-icon" }, [
+                            // DOM.tag("img", {src : "../images/phone-icon.png"}),
                             brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("img", { src: "../images/phone-icon.svg" }),
                         ]),
                         brandup_ui_dom__WEBPACK_IMPORTED_MODULE_0__.DOM.tag("div", { class: "phone-data" }, [
