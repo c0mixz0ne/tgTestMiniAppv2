@@ -1250,7 +1250,7 @@ var PagesMiddleware = /** @class */ (function (_super) {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/dist_tgapp/";
+/******/ 		__webpack_require__.p = "/tgTestMiniAppv2/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
